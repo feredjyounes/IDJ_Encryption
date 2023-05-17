@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/card"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Caesar Cipher"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/ubuntubold"
+        android:textSize="25dp"
+        android:textColor="@color/bluet"
+        android:layout_marginLeft="5dp"/>
+
+    <EditText
+        android:id="@+id/phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:textColor="@color/black"
+        android:fontFamily="@font/ubuntubold"
+        android:hint="phone"
+        android:padding="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:textColorHint="@color/peel_orange"/>
+
+    <EditText
+        android:id="@+id/plainText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_margin="20dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/ubuntubold"
+        android:hint="Plain Text"
+        android:padding="20dp"
+        android:textColorHint="@color/peel_orange"/>
+
+    <EditText
+        android:id="@+id/key"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:textColor="@color/black"
+        android:fontFamily="@font/ubuntubold"
+        android:hint="Key"
+        android:padding="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textColorHint="@color/peel_orange"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Encryption"
+        android:layout_margin="20dp"
+        android:background="@color/french_grey"
+        android:fontFamily="@font/ubuntubold"
+        android:textSize="18dp"
+        android:onClick="sendSMS"/>
+
+    <EditText
+        android:id="@+id/ciphertext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_margin="20dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/ubuntubold"
+        android:hint="Cipher Text"
+        android:padding="20dp"
+        android:textColorHint="@color/peel_orange"/>
+
+
+</LinearLayout>
